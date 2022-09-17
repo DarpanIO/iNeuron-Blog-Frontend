@@ -1,9 +1,26 @@
 import React, { useContext, useEffect,useState } from "react";
-import { useParams, Link ,useHistory} from "react-router-dom";
+import { useParams, Link ,useHistory, useLocation} from "react-router-dom";
 import articleContext from "../../../context/articles/articleContext";
 import Spinner from "../../../shared/spinner";
 import "./articles.css";
 import categoriesContext from "../../../context/categories/categoriesContext";
+import alertContext from "../../../context/Alert/alertContext";
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  PinterestShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+
+  EmailIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "react-share";
+
 export default function CreateArticle(props) {
   const { id } = useParams();
   const context = useContext(articleContext);
@@ -33,6 +50,8 @@ export default function CreateArticle(props) {
     window.scrollTo(0, 0);
   }, []);
 //  const [categoryName,setCategoryName]=useState('')
+const contextAlert = useContext(alertContext);
+const { showAlert } = contextAlert;
   articles.map((element, index) => {
     if (element._id === id && articles.length === 1) {
       createdDate = new Date(element.createdAt).toLocaleDateString('en-GB');
@@ -64,7 +83,7 @@ export default function CreateArticle(props) {
     }
     return element._id === id ? (title = element.title) : "";
   });
-
+const path = useLocation()
   return (
     <div>
       <div className="articles__left">
@@ -181,7 +200,17 @@ export default function CreateArticle(props) {
         {ofType !== "videos" && (
           <div className="article-subtitle">{description}</div>
         )}
-        <i class="fa-regular fa-share-from-square" onClick={navigator.clipboard.writeText(window.location.href)}></i>
+
+        <button onClick={()=>{
+          navigator.clipboard.writeText(window.location.href)
+          showAlert("Link Copied", "success");
+        }}><i class="fa-regular fa-share-from-square mx-1" ></i></button>
+          <FacebookShareButton className={"mx-1"} url={window.location.href} quote={""} hashtag={""}>
+          <FacebookIcon size={30}/>
+          </FacebookShareButton>
+          <WhatsappShareButton className={"mx-1"} url={window.location.href} quote={""} hashtag={""}>
+          <WhatsappIcon size={30}/>
+          </WhatsappShareButton>
         {imageUrl && ofType !== "videos" && (
           <div className="article-image d-flex justify-content-center">
             <img src={imageUrl} alt="" key={imageUrl} />
