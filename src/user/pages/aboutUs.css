@@ -1,0 +1,21 @@
+.about-us-main-body{
+    margin: 0px;
+    padding: 10px 18rem;
+}
+.about-us-main-body hr{
+    color:var(--primaryBlue);
+    border-width: 4px;
+    opacity: 100%;
+    margin: 5px 0px 15px 0px;
+}
+.about-us-main-body h1{
+    color:var(--primaryBlue);
+}
+.about-us-main-body h2{
+    color:var(--primaryBlue);
+}
+@media only screen and (max-width: 1000px) {
+    .about-us-main-body{
+        padding: 10px 1rem !important;
+    }
+  }

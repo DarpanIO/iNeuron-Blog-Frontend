@@ -1,0 +1,28 @@
+.sidebar{
+    /* width: 26%; */
+    min-height: 100vh;
+    height:auto;
+    display: flex;
+    justify-content: flex-start;
+    border-right: 1px rgb(228, 228, 228) solid;
+}
+#openweathermap-widget-15{
+    transform: scale(0.8);
+}
+#openweathermap-widget-15 .widget-right{
+    box-shadow: none;
+    border:1px lightgray solid ; 
+}
+.weatherContainer{
+    margin-top: 100px !important;
+}
+@media only screen and (max-width: 1000px) {
+    .sidebar{
+        display: none !important;
+    }
+ }
+@media only screen and (max-width: 1400px) {
+    #openweathermap-widget-15{
+        transform: scale(0.7);
+    }
+ }

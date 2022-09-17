@@ -1,0 +1,41 @@
+.trustee-cards-client{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.trustee-card-client{
+    width: 45%;
+    background-color: #0e4c6d10;
+    border: 4px solid #0e4c6d94;
+    display: flex;
+    flex-direction: column;
+   
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 30px;
+    color: black;
+}
+.trustee-card-client .trustee-name{
+    color : rgb(0, 0, 0);
+    font-size:x-large;
+    font-weight: 500;
+}
+.trustee-card-client .trustee-position{
+    color : rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 500;
+}
+.trustee-card-client .trustee-photo img{
+    border-radius: 50%;
+    width: 40%;
+    border:4px solid #0e4c6d7e;
+}
+
+@media only screen and (max-width: 1000px) {
+    .trustee-card-client{
+        width: 90%;
+    }
+  }

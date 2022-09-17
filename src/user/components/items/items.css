@@ -1,0 +1,129 @@
+.card{
+    height: 160px;
+}
+.card .row{
+    height: 100%;
+}
+.card-body{
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.item-image {
+    height: 12px;   
+    margin:0px 5px 0px 15px;
+}
+.item-image-container{
+    height:160px;
+    width: 20% !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.item-image-container>img{
+    height:85%;
+   width:20%;
+}
+.card-content{
+    width:78%;
+}
+.card:hover{
+    background-color: rgb(246, 246, 246);
+}
+.card-body{
+    padding-right:40px;
+}
+.card.videos{
+    width:377px;
+}
+p.card-description{
+ margin-bottom: 0.2rem;
+}
+.videos .card{
+    height: 320px;
+}
+.videos .card-description{
+ display:none;
+}
+.videos .card-content{
+    width:100% !important;
+}
+.videos .card-title{
+    font-size: medium !important;
+    
+}
+.videos .card-text{
+    font-size: smaller !important;
+    
+}
+.videos .item-image-container>img{
+    width:100% !important;
+    height:100% !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.videos .item-image-container{
+    width:100% !important;
+    height: 200px;
+}
+.videos .item-image-container iframe{
+    border-top-left-radius: var(--bs-border-radius-xl) ;
+    border-top-right-radius: var(--bs-border-radius-xl);
+    /* border-radius-top */
+}
+.videos .infinite-scroll-component{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videos .card{
+    margin: 5px;   
+}
+.videos .item-container{
+    padding: 0.5rem !important;   
+}
+
+@media only screen and (max-width: 1000px) {
+    p.card-description{
+        display: none !important;
+       }
+       .videos .card-content{
+        padding:9px !important;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .card.videos{
+        width:95% !important;
+        padding: 0px !important;
+    }
+    .item-image-container{
+        width: 39% !important;
+        height: 90px;
+    }
+    .item-image-container img{
+        height: 100% !important;
+    }
+    .card{
+        height: fit-content;
+    }
+    p.card-description{
+        display: none !important;
+       }
+    .card{
+        padding: 9px 9px;
+        border-radius: 12px !important;
+    }
+    h5{
+        font-size: 16px !important;
+    }
+    .card-content{
+        width:60% !important;
+    }
+    .card-body{
+        padding-right:12px !important;
+        padding:0px ;
+    }
+    small{
+        font-size: 0.72rem !important;
+    }
+  }

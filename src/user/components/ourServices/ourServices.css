@@ -1,0 +1,40 @@
+.our-services{
+    border-top:solid 1px lightgrey;
+    width:80%;
+}
+.our-services-title{
+    color: black;
+    font-size: 22px;
+}
+.our-services a{
+    text-decoration: none !important ;
+}
+.ourServicesCards button{
+    background-color: white !important;
+    border:none !important;
+    width:100% !important;
+}
+.ourServicesCards{
+    width:100% !important;
+}
+.ourServicesCards:hover{
+    background-color: #F5F5F5;
+    }
+.ourServicesCards button:hover{
+    background-color: #F5F5F5 !important;
+    }
+.active .ourServicesCards{
+    background-color: #F5F5F5 !important;
+    }
+
+.our-services-cards-img-container>img{
+    height: 22px;
+    width: 34px;
+}
+.ourServicesCards ul.dropdown-menu a li{
+    color: black;
+    padding: 2px 20px;
+}
+.ourServicesCards ul.dropdown-menu a li:hover{
+    background-color: #F5F5F5;
+}

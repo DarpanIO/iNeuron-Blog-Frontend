@@ -1,0 +1,109 @@
+:root{
+  --primaryBlue: #0e4c6d;
+  --secondaryBlue: #03324e;
+  --primaryBlack:#01263d;
+  --primaryRed: #be1e2d;
+  --secondaryRed: #c43240;
+  --contrastRed:#ef4043;
+  --lighterBlue:#72bad5;
+  --backgroundGrey:#F5F5F5;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main-body{
+  justify-content: end;
+  min-height: 100vh;
+}
+.main-body.videos{
+  margin: 3px 0px 10px 0px
+}
+.main-body.activities{
+  margin: 0px 18rem
+}
+.main-body.videos .article-title{
+  font-size: xx-large;
+}
+.infinite-scroll-component {
+  overflow: hidden !important;
+}
+.mobile{
+  display: none;
+}
+#sidebar {
+  /* width: 180px; */
+  /* padding: 10px; */
+  /* background: red; */
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 20%;
+  overflow:scroll;
+}
+#sidebar::-webkit-scrollbar{
+display: none;
+}
+
+.fixed {
+  position: fixed;
+  right: 50%;
+  margin-right: -50%;
+}
+#content{
+  width: 80% !important;
+}
+
+.breadcrumb-item a{
+  text-decoration: none;
+  color:gray;
+}
+.breadcrumb-item a:hover{
+  text-decoration: underline;
+}
+.breadcrumb-item.active{
+  color: var(--contrastRed);
+}
+.breadcrumb.mobile{
+  display: none !important;
+}
+@media only screen and (max-width: 1000px) {
+  .p-4{
+    padding: 0rem !important;
+  }
+  .mobile{
+    display: flex;
+  }
+  #content{
+    width: 100% !important;
+    padding: 0px 10px ;
+  }
+  .main-body.activities{
+    margin: 0px 0rem
+  }
+  .main-body{
+    margin: 0px 0rem
+  }
+  .breadcrumb.mobile{
+    display: flex !important;
+    font-size: 14px;
+  }
+  .breadcrumb.desktop{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1400px) {
+
+  .main-body.activities{
+    margin: 0px 0rem
+  }
+}

@@ -1,0 +1,36 @@
+.admin-categories-container{
+    background-color: white;
+    border: 1px lightgray solid;
+
+}
+.category-cards-admin{
+    max-height: 420px;
+    max-width: 225px;
+    overflow-y: scroll;
+}
+.admin-categorybox-name{
+    max-width: 115px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.adminEditButtons{
+    border: none;
+    background: none;
+}
+.adminEditButtons img{
+    height:15px ;
+    width:15px ;
+}
+#add-admin-categories-button{
+    border: none;
+    background-color: var(--primaryBlue);
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+}
+.admin-add-category-container input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px var(--primaryBlue) solid;
+}

@@ -1,0 +1,36 @@
+.trustee-card{
+    background-color: white;
+    border-radius: 10px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trustee-card .trustee-photo img{
+    width:200px;
+    border-radius:50%;
+}
+.trustee-card .trustee-name{
+    font-size: larger;
+}
+.trustee-card-buttons button{
+    border: none;
+    background-color: none;
+    background: none;
+    border-radius: 50%;
+    padding: 0%;
+}
+.trustee-card-buttons{
+    width: 100%;
+    justify-content: end;
+}
+.trustee-card-buttons button:hover{
+    border: none;
+    background-color: lightgray;
+    background: lightgray   ;
+}
+.trustee-card-buttons img{
+    height: 15px   ;
+    width: 15px   ;
+    margin:10px;
+}

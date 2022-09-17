@@ -1,0 +1,39 @@
+.banner-container{
+    height: 35vw !important;
+    border-radius: 30px;
+    margin: 3px;
+    margin-bottom: 20px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+.banner-text-container{
+    color: white;
+    background: linear-gradient(0deg, black, transparent);
+    height: 50%;
+    width: 100%;
+    border-radius: inherit;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    font-size: 26px;
+}
+@media only screen and (max-width: 1000px) {
+    .banner-container{
+        height: 50vw !important;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .banner-container{
+        height: 60vw !important;
+        border-radius: 15px;
+    }
+    .banner-text-container{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+  }

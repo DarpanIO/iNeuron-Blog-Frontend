@@ -1,0 +1,91 @@
+.adminnav .navbar{
+    display:flex;
+    /* filter: drop-shadow(2px 0px 4px grey); */
+    background-color: white !important;
+    /* height: 70px; */
+    border-bottom: rgb(228, 228, 228) 1px solid;
+}
+.secondaryNavbar{
+    height: 70px !important;
+}
+.adminnav #searchbox{
+    width:40vw;
+    border-radius: 0px 19px 19px 0px;
+    border-left-style: none;
+    padding-left: 0px;
+    border: 1px solid #ced4da;
+    border-left: none;
+}
+.adminnav #searchbox:focus-visible {
+    outline: 2px none rgb(0, 170, 255);
+    /* border-radius: 3px; */
+}
+.adminnav .searchBar {
+    margin-left: 50px;
+    height: 86%;
+}
+.adminnav .searchBar:focus-within {
+    outline: rgb(234, 238, 255) solid;
+    border-radius: 19px;
+}
+
+.adminnav .search-btn{
+    border: 1px solid #ced4da;
+    border-top-style: solid;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    background-color: white;
+    border-radius: 19px 0px 0px 19px;
+}
+.adminnav.secondaryNavbar .tabs{
+    display:flex;
+    position: absolute;
+    left: 10px;
+}
+.adminnav .tabs-client{
+    margin: 0 10px;
+    font-size: 23px;
+
+}
+.adminnav .navbar-brand img {
+    height: 50px;
+}
+.adminnav .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .adminnav .nav-link a{
+      color: #a9a9a9 !important;
+      text-decoration: none;
+
+  }
+.adminnav .nav-link.active a,.nav-link.active,.nav-link:focus{
+    color: #175676 !important;
+}
+.adminnav .nav-link:hover {
+    color: #175676 !important;
+    cursor: pointer;
+}
+.adminnav .tabs-desktop {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .adminnav .tabs-desktop {
+        display: unset !important;
+    }
+    .secondaryNavbar{
+        display: none !important;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+.dashboard-side-container{
+    display:none;
+}
+
+}

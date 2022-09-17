@@ -1,0 +1,19 @@
+.pdf-file-upload .pdf-logo{
+    height: 25px;
+}
+.pdf-file-upload .pdf-btn a{
+    text-decoration: none;
+    color: black;
+}
+.pdf-btn .btn{
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdf-btn .btn:hover{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

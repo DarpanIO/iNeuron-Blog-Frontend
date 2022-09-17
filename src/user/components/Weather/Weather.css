@@ -1,0 +1,13 @@
+.widget-right__header--brown {
+    background-image: linear-gradient(to top left,#ffffff,#ffffff) !important;
+    color: #333;
+}
+.widget-right--brown {
+    background-image: linear-gradient(to bottom,lightgray,lightgray) !important;
+}
+.widget-right__footer {
+    background: white;
+}
+.widget-right__header {
+    width: 100% !important;
+}
