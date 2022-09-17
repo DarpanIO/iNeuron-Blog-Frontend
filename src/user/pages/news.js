@@ -13,9 +13,9 @@ export const News = () => {
   const { setOfType } = context;
   const contextCategory = useContext(categoriesContext);
   const { categories } = contextCategory;
-  const ofType = "news";
+  const ofType = "blogs";
   useEffect(() => {
-    setOfType("news");
+    setOfType("blogs");
     Sticky();
   }, []);
 

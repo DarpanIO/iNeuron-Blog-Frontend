@@ -46,7 +46,7 @@ export default function Admin() {
           <Route
             exact
             path="/*"
-            element={<Navigate to="/admin/dashboard/news" />}
+            element={<Navigate to="/admin/dashboard/blogs" />}
           />
           <Route
             exact

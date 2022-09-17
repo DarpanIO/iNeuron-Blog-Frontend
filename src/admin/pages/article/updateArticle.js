@@ -79,7 +79,7 @@ const UpdateArticleContainer = (props) => {
   };
   return (
     <div className="">
-      <label className="p-2">
+      <label className="p-2 d-none">
         Type of Article
         <select
           className="mx-2"
@@ -90,6 +90,7 @@ const UpdateArticleContainer = (props) => {
           }}
           value={articleState}
         >
+          <option value="blogs">Blogs</option>
           <option value="news">News</option>
           <option value="publications">Publications</option>
           <option value="videos">Videos</option>

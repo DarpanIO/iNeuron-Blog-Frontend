@@ -56,11 +56,11 @@
     top: 0;
     width: 100%;
   }
-  .adminnav .nav-link a{
+  /* .adminnav .nav-link a{
       color: #a9a9a9 !important;
       text-decoration: none;
 
-  }
+  } */
 .adminnav .nav-link.active a,.nav-link.active,.nav-link:focus{
     color: #175676 !important;
 }

@@ -89,7 +89,7 @@ export default function AddArticle(props) {
   };
   return (
     <div className="w-100">
-      <label className="p-2">
+      <label className="p-2 d-none">
         Type of Article
         <select
           className="mx-2"
@@ -101,6 +101,7 @@ export default function AddArticle(props) {
           }}
           value={articleState}
         >
+          <option value="blogs">Blogs</option>
           <option value="news">News</option>
           <option value="publications">Publications</option>
           <option value="videos">Videos</option>

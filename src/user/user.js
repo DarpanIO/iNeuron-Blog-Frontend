@@ -19,8 +19,9 @@ export default function User() {
       <Nav />
       <div className="">
         <Routes>
-          <Route exact path="/*" element={<Navigate to="/news/all" />} />
+          <Route exact path="/*" element={<Navigate to="/blogs/all" />} />
           <Route exact path="/news/*" element={<News />} />
+          <Route exact path="/blogs/*" element={<News />} />
           <Route exact path="/publications/*" element={<Publications />} />
           <Route exact path="/videos/*" element={<Videos />} />
           <Route exact path="/aboutUs/*" element={<AboutUs />} />
