@@ -1,5 +1,5 @@
 import React, { useContext, useEffect,useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link ,useHistory} from "react-router-dom";
 import articleContext from "../../../context/articles/articleContext";
 import Spinner from "../../../shared/spinner";
 import "./articles.css";
@@ -181,6 +181,7 @@ export default function CreateArticle(props) {
         {ofType !== "videos" && (
           <div className="article-subtitle">{description}</div>
         )}
+        <i class="fa-regular fa-share-from-square" onClick={navigator.clipboard.writeText(window.location.href)}></i>
         {imageUrl && ofType !== "videos" && (
           <div className="article-image d-flex justify-content-center">
             <img src={imageUrl} alt="" key={imageUrl} />
